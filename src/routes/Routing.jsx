@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router';
 
 
 import Register from '../pages/RegisterPage';
@@ -12,8 +12,7 @@ import ListPage from '../pages/ListPage';
 function Routing() {
 
   return (
-    <div>
-      <Router>
+   
         <Routes>
       
             <Route path="/register" element={<Register/>}/>
@@ -23,8 +22,7 @@ function Routing() {
                              
                             
         </Routes>
-      </Router>
-    </div>
+      
   );
 }
 
