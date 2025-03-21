@@ -1,28 +1,26 @@
 import React from 'react';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import {  Routes, Route } from 'react-router';
 
-
-import Register from '../pages/RegisterPage';
 import LoginPage from '../pages/LoginPage';
-import ListPage from '../pages/ListPage';
+import HomePage from '../pages/HomePage';
+import RegisterPage from '../pages/RegisterPage';
 
 
 
 function Routing() {
 
   return (
-   
-        <Routes>
-      
-            <Route path="/register" element={<Register/>}/>
-            <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/List" element={<ListPage/>}/>
-
-                             
-                            
-        </Routes>
-      
+    
+    <div>
+        <BrowserRouter>
+              <Routes>
+                  <Route path="/register" element={<RegisterPage/>}/>
+                  <Route path="/login" element={<LoginPage/>}/>
+                  <Route path="/home" element={<HomePage/>}/>          
+              </Routes>
+        </BrowserRouter>
+      </div>
   );
 }
 

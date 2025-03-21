@@ -1,8 +1,19 @@
 {
-    "usuarios": []
-}
-
-
-{
-    "servicios": []
+  "users": [
+    {
+      "id": "0f13",
+      "nombre": "Isaac",
+      "email": "isaac_ema@gmail.com",
+      "password": "12345",
+      "rol": "admi"
+    },
+    {
+      "id": "5aca",
+      "nombre": "steven",
+      "email": "salas@gmail.com",
+      "password": "123",
+      "rol": "cliente"
+    }
+  ],
+  "servicios": []
 }

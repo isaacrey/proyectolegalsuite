@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react'
 
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
-import Llamados from '../services/Llamados.jsx';
+import llamados from "../services/Llamados"
 
 function LoginForm() {
 
@@ -51,10 +51,7 @@ const encontrado = usuarios.filter(usuarios => usuarios.email===nombreEmail && u
 
     }else{
 
-        navigate('/List')
-
-
-
+        navigate("/home")
 
     }
 }
@@ -73,6 +70,6 @@ const encontrado = usuarios.filter(usuarios => usuarios.email===nombreEmail && u
     </div>
   )};
 
-  //<input value={nombreUsuario} onChange={nombre} type="text"/>
+  
 
 export default LoginForm
